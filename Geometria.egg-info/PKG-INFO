@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: Geometria
+Version: 1.0
+Summary: This library has classes that represent geometric shapes (prepared for educational purposes).
+Home-page: UNKNOWN
+Author: Juan Jose Gaytan Hernandez Magro
+Author-email: juan.jose.gaytan@tec.mx
+License: UNKNOWN
+Description: # Geometria
+        
+        Geometria is a module that represents geometric shapes (for educational purposes).
+Platform: UNKNOWN

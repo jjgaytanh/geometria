@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+Geometria/__init__.py
+Geometria.egg-info/PKG-INFO
+Geometria.egg-info/SOURCES.txt
+Geometria.egg-info/dependency_links.txt
+Geometria.egg-info/top_level.txt
+geometria.egg-info/PKG-INFO
+geometria.egg-info/SOURCES.txt
+geometria.egg-info/dependency_links.txt
+geometria.egg-info/top_level.txt
