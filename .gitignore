@@ -1,7 +1,7 @@
 *.ini
 running_configs
 build/
-dist/
+#dist/
 exec/
 .DS_Store
 
