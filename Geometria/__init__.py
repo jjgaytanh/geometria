@@ -14,7 +14,12 @@ class TrianguloRectangulo:
             self.y = float(input("Proporcione tamaño del cateto Y: "))
         else:
             self.y = y
-        self.h = (self.x ** 2 + self.y ** 2) ** 0.5
+        self.h = self.hipotenusa()
+    def hipotenusa(self):
+        """ Return the hypotenuse of the triangle, calculated as:
+            h = sqrt(x^2 + y^2)
+        """
+        return (self.x ** 2 + self.y ** 2) ** 0.5
     def area(self):
         """ Return the area of the triangle, calculated as:
             area = (x * y)/2
