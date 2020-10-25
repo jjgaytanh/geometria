@@ -5,9 +5,15 @@ class TrianguloRectangulo:
         tangent of 'phi' can be calculated as well with their correspondant methods.
 
     """
-    def __init__(self):
-        self.x = float(input("Proporcione tamaño del cateto X: "))
-        self.y = float(input("Proporcione tamaño del cateto Y: "))
+    def __init__(self, x=None, y=None):
+        if x is None:
+            self.x = float(input("Proporcione tamaño del cateto X: "))
+        else:
+            self.x = x
+        if y is None:
+            self.y = float(input("Proporcione tamaño del cateto Y: "))
+        else:
+            self.y = y
         self.h = (self.x ** 2 + self.y ** 2) ** 0.5
     def area(self):
         """ Return the area of the triangle, calculated as:
@@ -42,9 +48,15 @@ class Rectangulo:
     """ This class represents a rectangle of sides 'x' and 'y';
         and helps with the calculation of its area, perimeter and diagonal.
     """
-    def __init__(self):
-        self.x = float(input("Proporcione tamaño del lado X: "))
-        self.y = float(input("Proporcione tamaño del lado Y: "))
+    def __init__(self, x=None, y=None):
+        if x is None:
+            self.x = float(input("Proporcione tamaño del lado X: "))
+        else:
+            self.x = x
+        if y is None:
+            self.y = float(input("Proporcione tamaño del lado Y: "))
+        else:
+            self.y = y
     def area(self):
         """ Return the area of the rectangle, calculated as:
             area = x * y
@@ -65,8 +77,11 @@ class Cuadrado:
     """ This class represents a square of side 'x';
         and helps with the calculation of its area, perimeter and diagonal.
     """
-    def __init__(self):
-        self.x = float(input("Proporcione tamaño del lado: "))
+    def __init__(self, x=None):
+        if x is None:
+            self.x = float(input("Proporcione tamaño del lado: "))
+        else:
+            self.x = x
     def area(self):
         """ Return the area of the square, calculated as:
             area = x^2
@@ -87,8 +102,11 @@ class Circulo:
     """ This class represents a circle of radius 'r' and diameter 'd';
         and helps with the calculation of its area and perimeter.
     """
-    def __init__(self):
-        self.r = float(input("Proporcione tamaño del radio: "))
+    def __init__(self, r=None):
+        if r is None:
+            self.r = float(input("Proporcione tamaño del radio: "))
+        else:
+            self.r = r
         self.d = 2 * self.r
     def area(self):
         """ Return the area of the circle, calculated as:
@@ -107,10 +125,16 @@ class Cilindro(Circulo):
     """ This class represents a cilinder of radius 'r' and height 'h';
         and helps with the calculation of its area, perimeter and volume.
     """
-    def __init__(self):
-        self.r = float(input("Proporcione tamaño del radio: "))
+    def __init__(self, r=None, h=None):
+        if r is None:
+            self.r = float(input("Proporcione tamaño del radio: "))
+        else:
+            self.r = r
         self.d = 2 * self.r
-        self.h = float(input("Proporcione tamaño de la altura: "))
+        if h is None:
+            self.h = float(input("Proporcione tamaño de la altura: "))
+        else:
+            self.h = h
     def area_tapa(self):
         """ Return the area of the circle, calculated as:
             area = pi(r^2)
