@@ -12,7 +12,7 @@ def module_path():
 dir_path = module_path()
 long_description_file = dir_path + "/README.md"
 setup(name='geometria',
-    version='1.2',
+    version='1.3',
     url=None,
     license=None,
     author='Juan Jose Gaytan Hernandez Magro',
