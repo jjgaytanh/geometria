@@ -7,11 +7,11 @@ class TrianguloRectangulo:
     """
     def __init__(self, x=None, y=None):
         if x is None:
-            self.x = float(input("Proporcione tamaño del cateto X: "))
+            self.x = float(input("X: "))
         else:
             self.x = x
         if y is None:
-            self.y = float(input("Proporcione tamaño del cateto Y: "))
+            self.y = float(input("Y: "))
         else:
             self.y = y
         self.h = self.hipotenusa()
@@ -55,11 +55,11 @@ class Rectangulo:
     """
     def __init__(self, x=None, y=None):
         if x is None:
-            self.x = float(input("Proporcione tamaño del lado X: "))
+            self.x = float(input("X: "))
         else:
             self.x = x
         if y is None:
-            self.y = float(input("Proporcione tamaño del lado Y: "))
+            self.y = float(input("Y: "))
         else:
             self.y = y
     def area(self):
@@ -84,7 +84,7 @@ class Cuadrado:
     """
     def __init__(self, x=None):
         if x is None:
-            self.x = float(input("Proporcione tamaño del lado: "))
+            self.x = float(input("X: "))
         else:
             self.x = x
     def area(self):
@@ -109,7 +109,7 @@ class Circulo:
     """
     def __init__(self, r=None):
         if r is None:
-            self.r = float(input("Proporcione tamaño del radio: "))
+            self.r = float(input("r: "))
         else:
             self.r = r
         self.d = 2 * self.r
@@ -132,12 +132,12 @@ class Cilindro(Circulo):
     """
     def __init__(self, r=None, h=None):
         if r is None:
-            self.r = float(input("Proporcione tamaño del radio: "))
+            self.r = float(input("r: "))
         else:
             self.r = r
         self.d = 2 * self.r
         if h is None:
-            self.h = float(input("Proporcione tamaño de la altura: "))
+            self.h = float(input("h: "))
         else:
             self.h = h
     def area_tapa(self):
